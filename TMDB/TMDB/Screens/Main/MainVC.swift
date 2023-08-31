@@ -14,10 +14,11 @@ class MainVC: UIViewController {
     lazy var viewModel = {
         MainVM(apiService: ApiService(baseURLString: URL_base))
     }()
+    lazy var searchBar:UISearchBar = UISearchBar(frame: CGRectMake(0, 0, self.view.bounds.width, 20))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "TMDB"
+        setupView()
         setupViewModel()
     }
 }
@@ -69,8 +70,40 @@ extension MainVC: UICollectionViewDelegateFlowLayout{
         return ITEMS_SPACING
     }
 }
+//SearchBar
+extension MainVC: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("searchText: \(searchText)")
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
+        
+        self.perform(#selector(searchTextChange), with: searchText, afterDelay: 0.5)
+        
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = nil
+        searchBar.endEditing(true)
+        searchTextChange("")
+    }
+}
 //Private
 extension MainVC{
+    @objc func searchTextChange(_ text: String){
+        if text.isEmpty{
+            viewModel.fetchTrendingMovie()
+        }else{
+            viewModel.fetchSearchingMovie(query: text)
+        }
+    }
+    func setupView(){
+        searchBar.placeholder = "Search"
+        var leftNavBarButton = UIBarButtonItem(customView:searchBar)
+        self.navigationItem.leftBarButtonItem = leftNavBarButton
+        searchBar.delegate = self
+        searchBar.showsCancelButton = true
+    }
     func setupViewModel() {
         // Reload CollectionView closure
         viewModel.callback_reloadCollectionView = { [weak self] in
@@ -83,6 +116,6 @@ extension MainVC{
 //                self?.collectionView.setContentOffset(contentOffset!, animated: false)
             }
         }
-        viewModel.fetchFirstPage()
+        viewModel.fetchTrendingMovie()
     }
 }

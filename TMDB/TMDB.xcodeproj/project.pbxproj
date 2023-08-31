@@ -103,7 +103,6 @@
 		CB9B90172AA0801A000C7A05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B90352AA0F5F8000C7A05 /* Search */,
 				CB9B90252AA0E2CC000C7A05 /* Detail */,
 				CB9B90242AA0E2BA000C7A05 /* Main */,
 			);
@@ -161,13 +160,6 @@
 				CB9B90332AA0E3D6000C7A05 /* DetailVM.swift */,
 			);
 			name = ViewModels;
-			sourceTree = "<group>";
-		};
-		CB9B90352AA0F5F8000C7A05 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		CBC010592A9F8A9B00DA9CC8 = {
