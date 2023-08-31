@@ -14,6 +14,15 @@ protocol ApiServiceProtocol{
     func fetchMovieDetails(movie_id: UInt, language: String, completion: @escaping(Result<Movie, Error>) -> Void)
 }
 
+extension ApiServiceProtocol{
+    func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, page: Int, completion: @escaping(Result<Movies, Error>) -> Void){
+        fetchTrendingMovies(time_window: time_window, page: page, language: "en-US", completion: completion)
+    }
+    func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, completion: @escaping(Result<Movies, Error>) -> Void){
+        fetchTrendingMovies(time_window: time_window, page: 1, completion: completion)
+    }
+}
+
 //ApiService class
 public final class ApiService: ApiServiceProtocol{
     private var baseURLString: String
@@ -50,7 +59,7 @@ extension ApiService{
         guard let url = URL(string: baseURLString + endpoint.path()) else {return nil}
         var request = URLRequest(url: url)
         print("URL: \(url.absoluteString)")
-//        request.cachePolicy = .returnCacheDataDontLoad
+        request.cachePolicy = Reachability.isConnectedToNetwork() ? .reloadIgnoringLocalCacheData : .returnCacheDataDontLoad
         request.httpMethod = endpoint.method()
         return request
     }

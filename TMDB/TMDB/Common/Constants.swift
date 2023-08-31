@@ -13,6 +13,7 @@ let URL_base = "https://api.themoviedb.org/3"
 let URL_path_trending_movies = "/trending/movie"
 let URL_path_search_movie = "/search/movie"
 let URL_path_movie_detail = "/movie"
+let URL_image = "https://image.tmdb.org/t/p/w"
 
 
 typealias RESPONSE_COMLETE = (Bool) -> Void

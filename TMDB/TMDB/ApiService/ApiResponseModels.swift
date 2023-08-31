@@ -30,4 +30,17 @@ struct Movie: Decodable{
     var video: Bool?
     var vote_average: Float?
     var vote_count: Double?
+    
+    func posterPathURL(width: Int) -> URL?{
+        return  URL(string: URL_image + String(width) + (poster_path ?? ""))
+    }
+    func backdropPathURL(width: Int) -> URL?{
+        return  URL(string: URL_image + String(width) + (backdrop_path ?? ""))
+    }
+    func rateString() -> String{
+        return String(format: "%.1f", vote_average ?? 0)
+    }
+    func releaseYear() -> String?{
+        return release_date?.components(separatedBy: "-")[0]
+    }
 }
