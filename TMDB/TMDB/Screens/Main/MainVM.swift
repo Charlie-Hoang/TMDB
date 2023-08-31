@@ -63,10 +63,13 @@ class MainVM{
     }
     func createCellVM(movie: Movie) -> MainCellVM{
         var cellVM = MainCellVM()
-        cellVM.poster = movie.posterPathURL(width: 200)
+        
+        cellVM.movie_id = movie.id
+        cellVM.poster = movie.posterPathURL(width: TMDB_poster_width)
         cellVM.title = movie.title
         cellVM.year = movie.releaseYear()
         cellVM.rate = movie.rateString()
+        print("cellVM: \(cellVM)")
         return cellVM
     }
 }

@@ -17,6 +17,7 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "TMDB"
         setupViewModel()
     }
 }
@@ -35,9 +36,9 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource{
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let vm = TeamDetailVM(team: viewModel.cellVMs[indexPath.row], apiService: viewModel.apiService)
-//        let vc = TeamDetailVC.instantiate(viewModel: vm)
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vm = DetailVM(apiService: viewModel.apiService, movie_id: viewModel.cellVMs[indexPath.row].movie_id ?? 0)
+        let vc = DetailVC.instantiate(viewModel: vm)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y

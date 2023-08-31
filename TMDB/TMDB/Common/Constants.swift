@@ -8,6 +8,9 @@
 
 
 let TMDB_ApiKey = "47aa75b56464da7a186b813a50035cd4"
+let TMDB_Language = "en-US"
+let TMDB_poster_width = 200
+let TMDB_backdrop_width = 300
 
 let URL_base = "https://api.themoviedb.org/3"
 let URL_path_trending_movies = "/trending/movie"

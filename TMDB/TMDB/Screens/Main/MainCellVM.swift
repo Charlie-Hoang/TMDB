@@ -8,8 +8,10 @@
 import Foundation
 
 struct MainCellVM {
+    var movie_id: UInt?
     var poster: URL?
     var title: String?
     var year: String?
     var rate: String?
+    
 }

@@ -17,7 +17,7 @@ class MainCell: UICollectionViewCell{
     
     var viewModel: MainCellVM?{
         didSet{
-            poster.load(url: (viewModel?.poster)!, placeholder: nil)
+            poster.load(url: viewModel?.poster, placeholder: nil)
             year.text = viewModel?.year
             title.text = viewModel?.title
             rate.text = viewModel?.rate

@@ -17,19 +17,19 @@ struct Movies: Decodable{
 struct Movie: Decodable{
     var adult: Bool?
     var backdrop_path: String?
-    var id: Int?
+    var id: UInt?
     var title: String?
     var original_language: String?
     var original_title: String?
     var overview: String?
     var poster_path: String?
     var media_type: String?
-    var genre_ids: [Int]?
+//    var genre_ids: [Int]?
     var popularity: Float?
     var release_date: String?
     var video: Bool?
     var vote_average: Float?
-    var vote_count: Double?
+    var vote_count: Float?
     
     func posterPathURL(width: Int) -> URL?{
         return  URL(string: URL_image + String(width) + (poster_path ?? ""))
