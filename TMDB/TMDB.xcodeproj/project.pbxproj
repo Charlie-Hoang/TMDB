@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0677C02AA1AC0F0000773C /* MainVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0677BF2AA1AC0F0000773C /* MainVMTests.swift */; };
+		CB0677C32AA1B18A0000773C /* DetailVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0677C22AA1B18A0000773C /* DetailVMTests.swift */; };
+		CB0677C62AA1B43E0000773C /* Dictionary+ExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0677C52AA1B43E0000773C /* Dictionary+ExtTests.swift */; };
 		CB9B90212AA0983B000C7A05 /* UIIMageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90202AA0983B000C7A05 /* UIIMageView+Ext.swift */; };
 		CB9B90232AA0DF64000C7A05 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90222AA0DF64000C7A05 /* Reachability.swift */; };
 		CB9B902A2AA0E385000C7A05 /* MainCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90282AA0E385000C7A05 /* MainCellVM.swift */; };
@@ -15,16 +18,20 @@
 		CB9B902F2AA0E39D000C7A05 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B902D2AA0E39D000C7A05 /* MainCell.swift */; };
 		CB9B90322AA0E3CB000C7A05 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90312AA0E3CB000C7A05 /* DetailVC.swift */; };
 		CB9B90342AA0E3D6000C7A05 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90332AA0E3D6000C7A05 /* DetailVM.swift */; };
+		CB9B903F2AA17D45000C7A05 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B903E2AA17D45000C7A05 /* MovieTests.swift */; };
+		CB9B90422AA17D69000C7A05 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B90412AA17D69000C7A05 /* ApiServiceTests.swift */; };
+		CB9B90442AA17EF8000C7A05 /* TrendingMovies0.json in Resources */ = {isa = PBXBuildFile; fileRef = CB9B90432AA17EF8000C7A05 /* TrendingMovies0.json */; };
+		CB9B90472AA1807E000C7A05 /* SearchingMovies0.json in Resources */ = {isa = PBXBuildFile; fileRef = CB9B90462AA1807E000C7A05 /* SearchingMovies0.json */; };
+		CB9B90492AA180F1000C7A05 /* MovieDetails0.json in Resources */ = {isa = PBXBuildFile; fileRef = CB9B90482AA180F1000C7A05 /* MovieDetails0.json */; };
 		CBC010662A9F8A9B00DA9CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010652A9F8A9B00DA9CC8 /* AppDelegate.swift */; };
 		CBC010682A9F8A9C00DA9CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010672A9F8A9C00DA9CC8 /* SceneDelegate.swift */; };
 		CBC0106D2A9F8A9C00DA9CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC0106B2A9F8A9C00DA9CC8 /* Main.storyboard */; };
 		CBC0106F2A9F8A9E00DA9CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC0106E2A9F8A9E00DA9CC8 /* Assets.xcassets */; };
 		CBC010722A9F8A9E00DA9CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC010702A9F8A9E00DA9CC8 /* LaunchScreen.storyboard */; };
-		CBC0107D2A9F8A9F00DA9CC8 /* TMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0107C2A9F8A9F00DA9CC8 /* TMDBTests.swift */; };
 		CBC010872A9F8A9F00DA9CC8 /* TMDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010862A9F8A9F00DA9CC8 /* TMDBUITests.swift */; };
 		CBC010892A9F8A9F00DA9CC8 /* TMDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010882A9F8A9F00DA9CC8 /* TMDBUITestsLaunchTests.swift */; };
 		CBC010972A9F8DB700DA9CC8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010962A9F8DB700DA9CC8 /* ApiService.swift */; };
-		CBC010992A9F8E7800DA9CC8 /* ApiResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010982A9F8E7800DA9CC8 /* ApiResponseModels.swift */; };
+		CBC010992A9F8E7800DA9CC8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010982A9F8E7800DA9CC8 /* Movie.swift */; };
 		CBC0109B2A9F902600DA9CC8 /* ApiUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0109A2A9F902600DA9CC8 /* ApiUtilities.swift */; };
 		CBC0109E2A9F906000DA9CC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0109D2A9F906000DA9CC8 /* Constants.swift */; };
 		CBC010A12A9F9B4800DA9CC8 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC010A02A9F9B4800DA9CC8 /* Dictionary+Ext.swift */; };
@@ -48,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0677BF2AA1AC0F0000773C /* MainVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVMTests.swift; sourceTree = "<group>"; };
+		CB0677C22AA1B18A0000773C /* DetailVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVMTests.swift; sourceTree = "<group>"; };
+		CB0677C52AA1B43E0000773C /* Dictionary+ExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ExtTests.swift"; sourceTree = "<group>"; };
+		CB0677C72AA1CC020000773C /* TMDB.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TMDB.xctestplan; sourceTree = "<group>"; };
 		CB9B90202AA0983B000C7A05 /* UIIMageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMageView+Ext.swift"; sourceTree = "<group>"; };
 		CB9B90222AA0DF64000C7A05 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		CB9B90282AA0E385000C7A05 /* MainCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCellVM.swift; path = TMDB/Screens/Main/MainCellVM.swift; sourceTree = SOURCE_ROOT; };
@@ -56,6 +67,11 @@
 		CB9B902D2AA0E39D000C7A05 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCell.swift; path = Main/MainCell.swift; sourceTree = "<group>"; };
 		CB9B90312AA0E3CB000C7A05 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CB9B90332AA0E3D6000C7A05 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		CB9B903E2AA17D45000C7A05 /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
+		CB9B90412AA17D69000C7A05 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
+		CB9B90432AA17EF8000C7A05 /* TrendingMovies0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrendingMovies0.json; sourceTree = "<group>"; };
+		CB9B90462AA1807E000C7A05 /* SearchingMovies0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchingMovies0.json; sourceTree = "<group>"; };
+		CB9B90482AA180F1000C7A05 /* MovieDetails0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MovieDetails0.json; sourceTree = "<group>"; };
 		CBC010622A9F8A9B00DA9CC8 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC010652A9F8A9B00DA9CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC010672A9F8A9C00DA9CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,12 +80,11 @@
 		CBC010712A9F8A9E00DA9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBC010732A9F8A9E00DA9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC010782A9F8A9F00DA9CC8 /* TMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBC0107C2A9F8A9F00DA9CC8 /* TMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTests.swift; sourceTree = "<group>"; };
 		CBC010822A9F8A9F00DA9CC8 /* TMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC010862A9F8A9F00DA9CC8 /* TMDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUITests.swift; sourceTree = "<group>"; };
 		CBC010882A9F8A9F00DA9CC8 /* TMDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBC010962A9F8DB700DA9CC8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		CBC010982A9F8E7800DA9CC8 /* ApiResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModels.swift; sourceTree = "<group>"; };
+		CBC010982A9F8E7800DA9CC8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CBC0109A2A9F902600DA9CC8 /* ApiUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtilities.swift; sourceTree = "<group>"; };
 		CBC0109D2A9F906000DA9CC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBC010A02A9F9B4800DA9CC8 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
@@ -100,6 +115,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0235C92AA196D50040C67C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B90282AA0E385000C7A05 /* MainCellVM.swift */,
+				CB9B90292AA0E385000C7A05 /* MainVM.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB0677BD2AA1ABC60000773C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CB0677C12AA1B1730000773C /* Detail */,
+				CB0677BE2AA1ABD90000773C /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CB0677BE2AA1ABD90000773C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB0677BF2AA1AC0F0000773C /* MainVMTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB0677C12AA1B1730000773C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CB0677C22AA1B18A0000773C /* DetailVMTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CB0677C42AA1B4260000773C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB0677C52AA1B43E0000773C /* Dictionary+ExtTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CB9B90172AA0801A000C7A05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,19 +176,10 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		CB9B901D2AA0973B000C7A05 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				CB9B90282AA0E385000C7A05 /* MainCellVM.swift */,
-				CB9B90292AA0E385000C7A05 /* MainVM.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		CB9B90242AA0E2BA000C7A05 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B901D2AA0973B000C7A05 /* ViewModels */,
+				CB0235C92AA196D50040C67C /* ViewModels */,
 				CB9B901C2AA09696000C7A05 /* Views */,
 			);
 			path = Main;
@@ -162,9 +210,45 @@
 			name = ViewModels;
 			sourceTree = "<group>";
 		};
+		CB9B903C2AA17C8B000C7A05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBC010982A9F8E7800DA9CC8 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB9B903D2AA17D2D000C7A05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B903E2AA17D45000C7A05 /* MovieTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB9B90402AA17D4D000C7A05 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B90412AA17D69000C7A05 /* ApiServiceTests.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		CB9B90452AA1801B000C7A05 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B90432AA17EF8000C7A05 /* TrendingMovies0.json */,
+				CB9B90462AA1807E000C7A05 /* SearchingMovies0.json */,
+				CB9B90482AA180F1000C7A05 /* MovieDetails0.json */,
+			);
+			name = MockData;
+			path = ApiService;
+			sourceTree = "<group>";
+		};
 		CBC010592A9F8A9B00DA9CC8 = {
 			isa = PBXGroup;
 			children = (
+				CB0677C72AA1CC020000773C /* TMDB.xctestplan */,
 				CBC010642A9F8A9B00DA9CC8 /* TMDB */,
 				CBC0107B2A9F8A9F00DA9CC8 /* TMDBTests */,
 				CBC010852A9F8A9F00DA9CC8 /* TMDBUITests */,
@@ -185,6 +269,7 @@
 		CBC010642A9F8A9B00DA9CC8 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
+				CB9B903C2AA17C8B000C7A05 /* Models */,
 				CB9B90172AA0801A000C7A05 /* Screens */,
 				CBC0109F2A9F9B3A00DA9CC8 /* Extensions */,
 				CBC0109C2A9F905600DA9CC8 /* Common */,
@@ -202,7 +287,11 @@
 		CBC0107B2A9F8A9F00DA9CC8 /* TMDBTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBC0107C2A9F8A9F00DA9CC8 /* TMDBTests.swift */,
+				CB0677C42AA1B4260000773C /* Extensions */,
+				CB9B90452AA1801B000C7A05 /* MockData */,
+				CB0677BD2AA1ABC60000773C /* Screens */,
+				CB9B90402AA17D4D000C7A05 /* ApiService */,
+				CB9B903D2AA17D2D000C7A05 /* Models */,
 			);
 			path = TMDBTests;
 			sourceTree = "<group>";
@@ -220,7 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				CBC010962A9F8DB700DA9CC8 /* ApiService.swift */,
-				CBC010982A9F8E7800DA9CC8 /* ApiResponseModels.swift */,
 				CBC0109A2A9F902600DA9CC8 /* ApiUtilities.swift */,
 				CB9B90222AA0DF64000C7A05 /* Reachability.swift */,
 			);
@@ -358,6 +446,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9B90492AA180F1000C7A05 /* MovieDetails0.json in Resources */,
+				CB9B90472AA1807E000C7A05 /* SearchingMovies0.json in Resources */,
+				CB9B90442AA17EF8000C7A05 /* TrendingMovies0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +475,7 @@
 				CB9B902F2AA0E39D000C7A05 /* MainCell.swift in Sources */,
 				CBC0109B2A9F902600DA9CC8 /* ApiUtilities.swift in Sources */,
 				CB9B902A2AA0E385000C7A05 /* MainCellVM.swift in Sources */,
-				CBC010992A9F8E7800DA9CC8 /* ApiResponseModels.swift in Sources */,
+				CBC010992A9F8E7800DA9CC8 /* Movie.swift in Sources */,
 				CB9B902B2AA0E385000C7A05 /* MainVM.swift in Sources */,
 				CBC010A12A9F9B4800DA9CC8 /* Dictionary+Ext.swift in Sources */,
 				CBC010682A9F8A9C00DA9CC8 /* SceneDelegate.swift in Sources */,
@@ -397,7 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC0107D2A9F8A9F00DA9CC8 /* TMDBTests.swift in Sources */,
+				CB0677C62AA1B43E0000773C /* Dictionary+ExtTests.swift in Sources */,
+				CB9B903F2AA17D45000C7A05 /* MovieTests.swift in Sources */,
+				CB9B90422AA17D69000C7A05 /* ApiServiceTests.swift in Sources */,
+				CB0677C02AA1AC0F0000773C /* MainVMTests.swift in Sources */,
+				CB0677C32AA1B18A0000773C /* DetailVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,8 +667,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +675,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -600,8 +697,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +705,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -628,6 +727,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,6 +750,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,6 +771,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -684,6 +793,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmdb.ios.TMDBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

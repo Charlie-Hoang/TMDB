@@ -33,11 +33,8 @@ enum Endpoint{
             return "GET"
         }
     }
-    func enableCache() -> Bool{
-        switch self{
-        case .getTrendingMovies, .getMovieDetails: return true
-        case.searchMovies: return false
-        }
+    func isCacheEnable() -> Bool{
+        return true
     }
 }
 

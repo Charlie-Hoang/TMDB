@@ -46,7 +46,6 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource{
         let contentHeight = scrollView.contentSize.height
         
         if offsetY >= contentHeight - scrollView.frame.size.height{
-            print("Load Next")
             viewModel.fetchNextPage()
         }
     }
@@ -76,7 +75,6 @@ extension MainVC: UISearchBarDelegate{
         searchBar.endEditing(true)
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("searchText: \(searchText)")
         NSObject.cancelPreviousPerformRequests(withTarget: self)
         
         self.perform(#selector(searchTextChange), with: searchText, afterDelay: 0.5)
@@ -85,6 +83,7 @@ extension MainVC: UISearchBarDelegate{
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = nil
         searchBar.endEditing(true)
+        searchBar.resignFirstResponder()
         searchTextChange("")
     }
 }
@@ -99,10 +98,11 @@ extension MainVC{
     }
     func setupView(){
         searchBar.placeholder = "Search"
-        var leftNavBarButton = UIBarButtonItem(customView:searchBar)
+        let leftNavBarButton = UIBarButtonItem(customView:searchBar)
         self.navigationItem.leftBarButtonItem = leftNavBarButton
         searchBar.delegate = self
         searchBar.showsCancelButton = true
+        
     }
     func setupViewModel() {
         // Reload CollectionView closure
@@ -110,10 +110,9 @@ extension MainVC{
             DispatchQueue.main.async {
                 self?.collectionView.reloadData()
                 self?.collectionView.alwaysBounceVertical = false
-                
-//                let contentOffset = self?.collectionView.contentOffset
-//                self?.collectionView.layoutIfNeeded()
-//                self?.collectionView.setContentOffset(contentOffset!, animated: false)
+                if self?.viewModel.currentPage == 1{
+                    self?.collectionView.setContentOffset(CGPoint(x:0,y:0), animated: true)
+                }
             }
         }
         viewModel.fetchTrendingMovie()

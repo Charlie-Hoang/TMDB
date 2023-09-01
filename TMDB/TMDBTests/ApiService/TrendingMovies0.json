@@ -1,0 +1,419 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/35z8hWuzfFUZQaYog8E9LsXW3iI.jpg",
+      "id": 335977,
+      "title": "Indiana Jones and the Dial of Destiny",
+      "original_language": "en",
+      "original_title": "Indiana Jones and the Dial of Destiny",
+      "overview": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
+      "poster_path": "/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        12,
+        28,
+        14
+      ],
+      "popularity": 1300.705,
+      "release_date": "2023-06-28",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 1140
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1HOBv1QxSbTwn5VyZ2vAVRhdR8e.jpg",
+      "id": 635910,
+      "title": "The Last Voyage of the Demeter",
+      "original_language": "en",
+      "original_title": "The Last Voyage of the Demeter",
+      "overview": "The crew of the merchant ship Demeter attempts to survive the ocean voyage from Carpathia to London as they are stalked each night by a merciless presence onboard the ship.",
+      "poster_path": "/nrtbv6Cew7qC7k9GsYSf5uSmuKh.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        14
+      ],
+      "popularity": 592.568,
+      "release_date": "2023-08-09",
+      "video": false,
+      "vote_average": 7.389,
+      "vote_count": 203
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qlxy8yo5bcgUw2KAmmojUKp4rHd.jpg",
+      "id": 615656,
+      "title": "Meg 2: The Trench",
+      "original_language": "en",
+      "original_title": "Meg 2: The Trench",
+      "overview": "An exploratory dive into the deepest depths of the ocean of a daring research team spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival.",
+      "poster_path": "/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        878,
+        27
+      ],
+      "popularity": 7621.501,
+      "release_date": "2023-08-02",
+      "video": false,
+      "vote_average": 6.991,
+      "vote_count": 1108
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uMOgml1QIhkqWnQYo9tN0CGEKSg.jpg",
+      "id": 532408,
+      "title": "The Boogeyman",
+      "original_language": "en",
+      "original_title": "The Boogeyman",
+      "overview": "Still reeling from the tragic death of their mother, a teenage girl and her younger sister find themselves plagued by a sadistic presence in their house and struggle to get their grieving father to pay attention before it’s too late.",
+      "poster_path": "/pYwZdnXVnVxAr7dx4MEK7tTK9gI.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "popularity": 203.473,
+      "release_date": "2023-05-31",
+      "video": false,
+      "vote_average": 6.412,
+      "vote_count": 210
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+      "id": 569094,
+      "title": "Spider-Man: Across the Spider-Verse",
+      "original_language": "en",
+      "original_title": "Spider-Man: Across the Spider-Verse",
+      "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+      "poster_path": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        28,
+        12
+      ],
+      "popularity": 1070.0,
+      "release_date": "2023-05-31",
+      "video": false,
+      "vote_average": 8.452,
+      "vote_count": 3926
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yEhdn9pWtEBeAZzbDXkLfgtIcJ2.jpg",
+      "id": 926393,
+      "title": "The Equalizer 3",
+      "original_language": "en",
+      "original_title": "The Equalizer 3",
+      "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
+      "poster_path": "/p0WBnzgyqxMxbF4UGiqTwBLnwht.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "popularity": 315.78,
+      "release_date": "2023-08-30",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 28
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg",
+      "id": 872585,
+      "title": "Oppenheimer",
+      "original_language": "en",
+      "original_title": "Oppenheimer",
+      "overview": "The story of J. Robert Oppenheimer’s role in the development of the atomic bomb during World War II.",
+      "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "popularity": 590.47,
+      "release_date": "2023-07-19",
+      "video": false,
+      "vote_average": 8.273,
+      "vote_count": 2907
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gyaqhppr9BnBCFF0R2dXeIe4J1k.jpg",
+      "id": 869641,
+      "title": "Vacation Friends 2",
+      "original_language": "en",
+      "original_title": "Vacation Friends 2",
+      "overview": "Newly married couple Marcus and Emily invite their uninhibited besties Ron and Kyla to join them for a vacation when Marcus lands an all-expenses-paid trip to a Caribbean resort. When Kyla’s incarcerated father Reese is released and shows up at the resort unannounced, things get out of control, upending Marcus’ best laid plans and turning the vacation friends’ perfect trip into total chaos.",
+      "poster_path": "/wmH3VaUbwwTO3vDJhWT35BOFgb3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 265.144,
+      "release_date": "2023-08-25",
+      "video": false,
+      "vote_average": 6.725,
+      "vote_count": 80
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yF1eOkaYvwiORauRCPWznV9xVvi.jpg",
+      "id": 298618,
+      "title": "The Flash",
+      "original_language": "en",
+      "original_title": "The Flash",
+      "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
+      "poster_path": "/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        878
+      ],
+      "popularity": 910.009,
+      "release_date": "2023-06-13",
+      "video": false,
+      "vote_average": 6.932,
+      "vote_count": 2632
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+      "id": 346698,
+      "title": "Barbie",
+      "original_language": "en",
+      "original_title": "Barbie",
+      "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+      "poster_path": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        12,
+        14
+      ],
+      "popularity": 1266.061,
+      "release_date": "2023-07-19",
+      "video": false,
+      "vote_average": 7.395,
+      "vote_count": 3549
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cSYLX73WskxCgvpN3MtRkYUSj1T.jpg",
+      "id": 976573,
+      "title": "Elemental",
+      "original_language": "en",
+      "original_title": "Elemental",
+      "overview": "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
+      "poster_path": "/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        14,
+        10749
+      ],
+      "popularity": 1832.283,
+      "release_date": "2023-06-14",
+      "video": false,
+      "vote_average": 7.779,
+      "vote_count": 1628
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rRcNmiH55Tz0ugUsDUGmj8Bsa4V.jpg",
+      "id": 884605,
+      "title": "No Hard Feelings",
+      "original_language": "en",
+      "original_title": "No Hard Feelings",
+      "overview": "On the brink of losing her childhood home, Maddie discovers an intriguing job listing: wealthy helicopter parents looking for someone to “date” their introverted 19-year-old son, Percy, before he leaves for college. To her surprise, Maddie soon discovers the awkward Percy is no sure thing.",
+      "poster_path": "/gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "popularity": 654.471,
+      "release_date": "2023-06-15",
+      "video": false,
+      "vote_average": 7.145,
+      "vote_count": 1024
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ofhCK7zP0fMJzJC3mn9roLmAfq5.jpg",
+      "id": 999644,
+      "title": "You Are So Not Invited to My Bat Mitzvah",
+      "original_language": "en",
+      "original_title": "You Are So Not Invited to My Bat Mitzvah",
+      "overview": "Stacy and Lydia are BFFs who've always dreamed about having epic bat mitzvahs. But things start to go comically awry when a popular boy and middle school drama threatens their friendship and their rite of passage.",
+      "poster_path": "/eQzZ4777zaAKwa9YZnIQjRb22yn.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 195.093,
+      "release_date": "2023-08-18",
+      "video": false,
+      "vote_average": 6.226,
+      "vote_count": 106
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+      "id": 447365,
+      "title": "Guardians of the Galaxy Vol. 3",
+      "original_language": "en",
+      "original_title": "Guardians of the Galaxy Vol. 3",
+      "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+      "poster_path": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "popularity": 530.007,
+      "release_date": "2023-05-03",
+      "video": false,
+      "vote_average": 8.0,
+      "vote_count": 4590
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lEMO9pVODhiWLgJzuCaYlfJkdNz.jpg",
+      "id": 1010826,
+      "title": "Killer Book Club",
+      "original_language": "es",
+      "original_title": "El club de los lectores criminales",
+      "overview": "Eight horror-loving friends fight for their lives when a killer clown who seems to know the grim secret they share begins to pick them off, one by one.",
+      "poster_path": "/zZH0sAUV0nfEEDBUdWBMLjs2XnN.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "popularity": 317.617,
+      "release_date": "2023-08-25",
+      "video": false,
+      "vote_average": 5.476,
+      "vote_count": 82
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7gFEPIcJDQvGq9xTvlPL2ZQB27c.jpg",
+      "id": 980489,
+      "title": "Gran Turismo",
+      "original_language": "en",
+      "original_title": "Gran Turismo",
+      "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
+      "poster_path": "/ckW6FZqMFEKA9DonixjZSAPxJMo.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        18,
+        12
+      ],
+      "popularity": 375.276,
+      "release_date": "2023-08-09",
+      "video": false,
+      "vote_average": 7.471,
+      "vote_count": 206
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rck9CWGMU8uKYBJCf46modwpwJd.jpg",
+      "id": 1159086,
+      "title": "The Great Seduction",
+      "original_language": "es",
+      "original_title": "La gran seducción",
+      "overview": "When a golden opportunity arises to boost the fortunes of a forgotten fishing town, its residents set out to trick their way to making it happen.",
+      "poster_path": "/4EONm3medZBNfHhost4taqrje1r.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "popularity": 71.803,
+      "release_date": "2023-08-30",
+      "video": false,
+      "vote_average": 9.0,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ixZzr4PyM2TPs5fka3IJj058WYo.jpg",
+      "id": 565770,
+      "title": "Blue Beetle",
+      "original_language": "en",
+      "original_title": "Blue Beetle",
+      "overview": "Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.",
+      "poster_path": "/lZ2sOCMCcGaPppaXj0Wiv0S7A08.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "popularity": 333.321,
+      "release_date": "2023-08-16",
+      "video": false,
+      "vote_average": 6.874,
+      "vote_count": 293
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/53z2fXEKfnNg2uSOPss2unPBGX1.jpg",
+      "id": 968051,
+      "title": "The Nun II",
+      "original_language": "en",
+      "original_title": "The Nun II",
+      "overview": "Four years after the events at the Abbey of St. Carta, Sister Irene returns once again and comes face to face with the demonic force Valak, the Nun.",
+      "poster_path": "/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        9648,
+        53
+      ],
+      "popularity": 250.651,
+      "release_date": "2023-09-05",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w2nFc2Rsm93PDkvjY4LTn17ePO0.jpg",
+      "id": 614930,
+      "title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "original_language": "en",
+      "original_title": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "overview": "After years of being sheltered from the human world, the Turtle brothers set out to win the hearts of New Yorkers and be accepted as normal teenagers through heroic acts. Their new friend April O'Neil helps them take on a mysterious crime syndicate, but they soon get in over their heads when an army of mutants is unleashed upon them.",
+      "poster_path": "/ueO9MYIOHO7M1PiMUeX74uf8fB9.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        35,
+        28
+      ],
+      "popularity": 174.759,
+      "release_date": "2023-07-31",
+      "video": false,
+      "vote_average": 7.427,
+      "vote_count": 240
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}

@@ -15,7 +15,7 @@ class MainVM{
     var callback_reloadCollectionView: RESPONSE_EMPTY?
     var currentPage = 1
     
-    var searching = false
+    private var searching = false
     var query: String = ""
     
     init(apiService: ApiServiceProtocol) {
@@ -24,7 +24,8 @@ class MainVM{
     func fetchTrendingMovie(firstPage: Bool = true){
         searching = false
         currentPage = firstPage ? 1 : (currentPage + 1)
-        apiService.fetchTrendingMovies(time_window: .day, page: 1, completion: { [weak self] result in
+        print("page: \(currentPage)")
+        apiService.fetchTrendingMovies(time_window: .day, page: currentPage, completion: { [weak self] result in
             
             switch result{
             case .success(let res):
@@ -44,7 +45,7 @@ class MainVM{
         searching = true
         currentPage = firstPage ? 1 : (currentPage + 1)
         self.query = query
-        apiService.searchMovies(query: query, include_adult: true, page: currentPage, completion: { [weak self] result in
+        apiService.searchMovies(query: query, page: currentPage, completion: { [weak self] result in
             switch result{
             case .success(let res):
                 if let _movies = res.results{
@@ -59,7 +60,7 @@ class MainVM{
     }
     func fetchNextPage(){
         if searching{
-            fetchSearchingMovie(query: query)
+            fetchSearchingMovie(query: query, firstPage: false)
         }else{
             fetchTrendingMovie(firstPage: false)
         }
@@ -80,7 +81,6 @@ class MainVM{
         cellVM.title = movie.title
         cellVM.year = movie.releaseYear()
         cellVM.rate = movie.rateString()
-        print("cellVM: \(cellVM)")
         return cellVM
     }
 }

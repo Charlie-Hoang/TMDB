@@ -19,7 +19,9 @@ extension ApiServiceProtocol{
     func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, completion: @escaping(Result<Movies, Error>) -> Void){
         fetchTrendingMovies(time_window: time_window, page: 1, completion: completion)
     }
-    
+    func searchMovies(query: String, page: Int, completion: @escaping(Result<Movies, Error>) -> Void){
+        searchMovies(query: query, include_adult: false, page: page, completion: completion)
+    }
 }
 
 //ApiService class
@@ -36,7 +38,7 @@ public final class ApiService: ApiServiceProtocol{
         }
         excuteRequest(request: request, completion: completion)
     }
-    func searchMovies(query: String, include_adult: Bool = true, page: Int = 1, completion: @escaping(Result<Movies, Error>) -> Void){
+    func searchMovies(query: String, include_adult: Bool = false, page: Int = 1, completion: @escaping(Result<Movies, Error>) -> Void){
         guard let request = makeRequest(endpoint: .searchMovies(query: query, include_adult: include_adult, page: page)) else {
             completion(Result.failure(ApiError.unidentified))
             return
@@ -58,7 +60,7 @@ extension ApiService{
         guard let url = URL(string: baseURLString + endpoint.path()) else {return nil}
         var request = URLRequest(url: url)
         print("URL: \(url.absoluteString)")
-        if endpoint.enableCache(){
+        if endpoint.isCacheEnable(){
             request.cachePolicy = Reachability.isConnectedToNetwork() ? .reloadIgnoringLocalCacheData : .returnCacheDataDontLoad
         }else{
             request.cachePolicy = .reloadIgnoringLocalCacheData

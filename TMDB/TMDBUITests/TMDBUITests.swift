@@ -8,26 +8,53 @@
 import XCTest
 
 final class TMDBUITests: XCTestCase {
-
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
     }
-
-    func testExample() throws {
+    func testMain() throws{
+        let app = XCUIApplication()
+        app.launch()
+        let detailTitleLabel0 = app.staticTexts["Indiana Jones and the Dial of Destiny"]
+        XCTAssertTrue(detailTitleLabel0.exists)
+        
+        let detailTitleLabel1 = app.staticTexts["The Last Voyage of the Demeter"]
+        XCTAssertTrue(detailTitleLabel1.exists)
+        
+        let detailTitleLabel2 = app.staticTexts["Meg 2: The Trench"]
+        XCTAssertTrue(detailTitleLabel2.exists)
+    }
+    func testSearch() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        let searchBar = app.searchFields
+        XCTAssertTrue(searchBar.element.exists)
+        XCTAssertEqual(searchBar.element.placeholderValue, "Search", "Place holder should be 'Search'")
+        searchBar.element.tap()
+        searchBar.element.typeText("O")
+        
+        let onepiece = app.collectionViews.children(matching: .any).element(boundBy: 0)
+        XCTAssert(onepiece.exists)
+    }
+    func testOpenDetail() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.collectionViews.cells.element(boundBy:0).tap()
+        
+        let detailTitleLabel = app.staticTexts["Indiana Jones and the Dial of Destiny"]
+        XCTAssertTrue(detailTitleLabel.exists)
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let yearLabel = app.staticTexts["2023"]
+        XCTAssertTrue(yearLabel.exists)
+
+        let rateLabel = app.staticTexts["6.7"]
+        XCTAssertTrue(rateLabel.exists)
     }
 
     func testLaunchPerformance() throws {

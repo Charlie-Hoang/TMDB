@@ -1,14 +1,14 @@
 //
-//  TMDBTests.swift
+//  Dictionary+ExtTests.swift
 //  TMDBTests
 //
-//  Created by Charlie on 30/8/23.
+//  Created by Charlie on 1/9/23.
 //
 
 import XCTest
 @testable import TMDB
 
-final class TMDBTests: XCTestCase {
+final class Dictionary_ExtTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,12 +18,11 @@ final class TMDBTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testBuildQueryString() throws {
+        let input = ["language": "en-US"]
+        let expectation = "?language=en-US"
+        let result = input.buildQueryString()
+        XCTAssertEqual(result, expectation, "Should be equal!")
     }
 
     func testPerformanceExample() throws {
