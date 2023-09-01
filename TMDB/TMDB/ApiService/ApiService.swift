@@ -10,18 +10,8 @@ import Foundation
 //Protocol
 protocol ApiServiceProtocol{
     func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, page: Int, completion: @escaping(Result<Movies, Error>) -> Void)
-    func searchMovies(query: String, include_adult: Bool, page: Int, completion: @escaping(Result<Movies, Error>) -> Void)
+    func searchMovies(query: String, page: Int, completion: @escaping(Result<Movies, Error>) -> Void)
     func fetchMovieDetails(movie_id: UInt, completion: @escaping(Result<Movie, Error>) -> Void)
-}
-
-extension ApiServiceProtocol{
-    
-    func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, completion: @escaping(Result<Movies, Error>) -> Void){
-        fetchTrendingMovies(time_window: time_window, page: 1, completion: completion)
-    }
-    func searchMovies(query: String, page: Int, completion: @escaping(Result<Movies, Error>) -> Void){
-        searchMovies(query: query, include_adult: false, page: page, completion: completion)
-    }
 }
 
 //ApiService class
@@ -38,8 +28,8 @@ public final class ApiService: ApiServiceProtocol{
         }
         excuteRequest(request: request, completion: completion)
     }
-    func searchMovies(query: String, include_adult: Bool = false, page: Int = 1, completion: @escaping(Result<Movies, Error>) -> Void){
-        guard let request = makeRequest(endpoint: .searchMovies(query: query, include_adult: include_adult, page: page)) else {
+    func searchMovies(query: String, page: Int = 1, completion: @escaping(Result<Movies, Error>) -> Void){
+        guard let request = makeRequest(endpoint: .searchMovies(query: query, include_adult: false, page: page)) else {
             completion(Result.failure(ApiError.unidentified))
             return
         }
