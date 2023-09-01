@@ -1,9 +1,9 @@
 # TMDB
 
 <div align="center">
-  <img src="https://github.com/Charlie-Hoang/TMDB/blob/main/imgs/img_1.png" width="207" height="368"/>
-  <img src="https://github.com/Charlie-Hoang/TMDB/blob/main/imgs/img_2.png" width="207" height="368"/>
-  <img src="https://github.com/Charlie-Hoang/TMDB/blob/main/imgs/img_3.png" width="207" height="368"/>
+  <img src="https://github.com/Charlie-Hoang/TMDB/blob/master/imgs/img_1.png" width="207" height="368"/>
+  <img src="https://github.com/Charlie-Hoang/TMDB/blob/master/imgs/img_2.png" width="207" height="368"/>
+  <img src="https://github.com/Charlie-Hoang/TMDB/blob/master/imgs/img_3.png" width="207" height="368"/>
 </div>
 
 ## Requirements 
@@ -21,16 +21,22 @@
 
 ## Features
 - Trending movie list
+  + Caching for offline
+  + Scroll for loading more
 - Search movie
+  + Caching for offline
+  + Scroll for loading more
 - Movie details
+  + Caching for offline
   
 # Testing
 - Unit Test
 - UI Test
 <div align="left">
-  <img src="https://github.com/Charlie-Hoang/TMDB/blob/main/imgs/img_4.png" width="207" height="368"/>
-  <img src="https://github.com/Charlie-Hoang/TMDB/blob/main/imgs/img_5.png" width="207" height="368"/>
+  <img src="https://github.com/Charlie-Hoang/TMDB/blob/master/imgs/img_4.png" width="140" height="368"/>
+  <img src="https://github.com/Charlie-Hoang/TMDB/blob/master/imgs/img_5.png" width="607" height="368"/>
 </div>
+
 # Author
 - [Charlie](https://www.linkedin.com/in/cuong-hoang-b650715a)
 
