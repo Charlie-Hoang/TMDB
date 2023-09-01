@@ -49,7 +49,6 @@ extension ApiService{
     private func makeRequest(endpoint: Endpoint) -> URLRequest?{
         guard let url = URL(string: baseURLString + endpoint.path()) else {return nil}
         var request = URLRequest(url: url)
-        print("URL: \(url.absoluteString)")
         if endpoint.isCacheEnable(){
             request.cachePolicy = Reachability.isConnectedToNetwork() ? .reloadIgnoringLocalCacheData : .returnCacheDataDontLoad
         }else{

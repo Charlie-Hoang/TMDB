@@ -8,23 +8,6 @@
 import UIKit
 
 extension UIImageView {
-    func load(url: URL?) {
-        guard let url = url else {return}
-        let indicator = UIActivityIndicatorView(style: .large)
-        indicator.startAnimating()
-        self.addSubview(indicator)
-        indicator.center = self.convert(self.center, from:self.superview)
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                        indicator.removeFromSuperview()
-                    }
-                }
-            }
-        }
-    }
     func load(url: URL?, placeholder: UIImage?, cache: URLCache? = nil) {
         guard let url = url else {return}
         let cache = cache ?? URLCache.shared

@@ -24,7 +24,6 @@ class MainVM{
     func fetchTrendingMovie(firstPage: Bool = true){
         searching = false
         currentPage = firstPage ? 1 : (currentPage + 1)
-        print("page: \(currentPage)")
         apiService.fetchTrendingMovies(time_window: .day, page: currentPage, completion: { [weak self] result in
             
             switch result{
