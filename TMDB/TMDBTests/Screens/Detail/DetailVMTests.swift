@@ -16,7 +16,7 @@ final class DetailVMTests: XCTestCase {
         
         let mockJsonData = ApiService.loadSampleResponse(fileName: "MovieDetails0")
         mockMovie = try! JSONDecoder().decode(Movie.self, from: mockJsonData)
-        detailVM = DetailVM(apiService: ApiService(baseURLString: URL_base), movie_id: mockMovie.id!)
+        detailVM = DetailVM(apiService: ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey)), movie_id: mockMovie.id!)
     }
 
     override func tearDownWithError() throws {
@@ -42,11 +42,11 @@ final class DetailVMTests: XCTestCase {
         XCTAssertEqual(detailVM.overview, mockMovie.overview, "Should be equal")
         XCTAssertEqual(detailVM.rate, mockMovie.rateString(), "Should be equal")
     }
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 
 }

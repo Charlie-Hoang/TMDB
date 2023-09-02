@@ -35,7 +35,6 @@ class DetailVM{
                 
                 self?.callback_reloadView?()
             case .failure(_):
-                print("error")
                 self?.callback_reloadView?()
             }
         })

@@ -9,6 +9,7 @@ import Foundation
 
 //Protocol
 protocol ApiServiceProtocol{
+    var config: ApiServiceConfigurable {get}
     func fetchTrendingMovies(time_window: MovieTrendingTimeWindow, page: Int, completion: @escaping(Result<Movies, Error>) -> Void)
     func searchMovies(query: String, page: Int, completion: @escaping(Result<Movies, Error>) -> Void)
     func fetchMovieDetails(movie_id: UInt, completion: @escaping(Result<Movie, Error>) -> Void)
@@ -16,10 +17,10 @@ protocol ApiServiceProtocol{
 
 //ApiService class
 public final class ApiService: ApiServiceProtocol{
-    private var baseURLString: String
+    var config: ApiServiceConfigurable
     
-    init(baseURLString: String){
-        self.baseURLString = baseURLString
+    init(config: ApiServiceConfigurable){
+        self.config = config
     }
     func fetchTrendingMovies(time_window: MovieTrendingTimeWindow = .day, page: Int = 1, completion: @escaping(Result<Movies, Error>) -> Void){
         guard let request = makeRequest(endpoint: .getTrendingMovies(time_window: time_window, page: page)) else {
@@ -47,7 +48,8 @@ public final class ApiService: ApiServiceProtocol{
 //Private
 extension ApiService{
     private func makeRequest(endpoint: Endpoint) -> URLRequest?{
-        guard let url = URL(string: baseURLString + endpoint.path()) else {return nil}
+        guard let url = endpoint.buildRequestURL(config: config) else {return nil}
+        print("request: \(url.absoluteString)")
         var request = URLRequest(url: url)
         if endpoint.isCacheEnable(){
             request.cachePolicy = Reachability.isConnectedToNetwork() ? .reloadIgnoringLocalCacheData : .returnCacheDataDontLoad
@@ -58,17 +60,52 @@ extension ApiService{
         return request
     }
     private func excuteRequest<T: Decodable>(request: URLRequest, completion: @escaping(Result<T, Error>) -> Void){
-        let task = URLSession.shared.dataTask(with: request) { data, responseHeader, error in
-            guard let data = data else {
-                completion(Result.failure(ApiError.unidentified))
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Network error:", error.localizedDescription)
+                completion(Result.failure(ApiError.networkError))
                 return
             }
-            do{
-                let responseModel = try JSONDecoder().decode(T.self, from: data)
-                completion(Result.success(responseModel))
-            }catch{
-                completion(Result.failure(ApiError.unidentified))
+            
+            if let httpResponse = response as? HTTPURLResponse {
+                guard let data = data else {
+                    print("request failed")
+                    completion(Result.failure(ApiError.invalidResponse))
+                    return
+                }
+                switch httpResponse.statusCode {
+                case 200..<300:
+                    // Successful response; parse the data here
+                    do{
+                        let responseModel = try JSONDecoder().decode(T.self, from: data)
+                        print("request success")
+                        completion(Result.success(responseModel))
+                    }catch{
+                        print("request failed")
+                        completion(Result.failure(ApiError.invalidResponse))
+                    }
+                case 400...499:
+                    // Client error
+                    do{
+                        let errorResponse = try JSONDecoder().decode(ResponseError.self, from: data)
+                        print("Client error:", errorResponse.status_message)
+                        completion(Result.failure(ApiError.responseError(error: errorResponse)))
+                    }catch{
+                        print("request failed")
+                        completion(Result.failure(ApiError.invalidResponse))
+                    }
+                case 500...599:
+                    // Server error; handle as needed
+                    print("Server error:", httpResponse.statusCode)
+                    completion(Result.failure(ApiError.serverError))
+                default:
+                    // Handle other status codes if necessary
+                    print("Unexpected status code:", httpResponse.statusCode)
+                    completion(Result.failure(ApiError.unidentified))
+                }
             }
+            
+            
         }
         task.resume()
     }

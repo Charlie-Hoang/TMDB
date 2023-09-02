@@ -35,7 +35,6 @@ class MainVM{
                 
                 self?.callback_reloadCollectionView?()
             case .failure(_):
-                print("error")
                 self?.callback_reloadCollectionView?()
             }
         })
@@ -52,7 +51,6 @@ class MainVM{
                 }
                 self?.callback_reloadCollectionView?()
             case .failure(_):
-                print("error")
                 self?.callback_reloadCollectionView?()
             }
         })

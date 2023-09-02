@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Movies: Decodable{
+struct Movies: Codable{
     var page: Int?
     var results: [Movie]?
     var total_pages: Int?
     var total_results: Int?
 }
 
-struct Movie: Decodable{
+struct Movie: Codable{
     var adult: Bool?
     var backdrop_path: String?
     var id: UInt?

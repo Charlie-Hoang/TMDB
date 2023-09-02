@@ -12,7 +12,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var viewModel = {
-        MainVM(apiService: ApiService(baseURLString: URL_base))
+        MainVM(apiService: ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey + "somethingwrong")))
     }()
     lazy var searchBar:UISearchBar = UISearchBar(frame: CGRectMake(0, 0, self.view.bounds.width, 20))
     

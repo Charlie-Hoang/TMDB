@@ -12,8 +12,8 @@ extension Movies: Equatable{
         var equal = true
         if let lresults = lhs.results, let rresults = rhs.results{
             if lresults.count != rresults.count {return false}
-            for i in 0..<lresults.count{
-                if lresults[i] != rresults[i] {return false}
+            for (index, result) in lresults.enumerated(){
+                if result != rresults[index] {return false}
             }
         }
         return lhs.page == rhs.page &&
@@ -66,10 +66,10 @@ final class MovieTests: XCTestCase {
         XCTAssertEqual(expectation, result, "release year should be equal to \(expectation)!")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 }

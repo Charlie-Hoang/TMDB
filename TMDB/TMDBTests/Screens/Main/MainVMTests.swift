@@ -23,7 +23,7 @@ final class MainVMTests: XCTestCase {
     var mainVM: MainVM!
     var mockMovie: Movie!
     override func setUpWithError() throws {
-        mainVM = MainVM(apiService: ApiService(baseURLString: URL_base))
+        mainVM = MainVM(apiService: ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey)))
         let mockJsonData = ApiService.loadSampleResponse(fileName: "MovieDetails0")
         mockMovie = try! JSONDecoder().decode(Movie.self, from: mockJsonData)
     }
@@ -65,11 +65,11 @@ final class MainVMTests: XCTestCase {
         XCTAssertEqual(expectation, result, "backdrop url should be equal to mock data!")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() throws {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
 
 }

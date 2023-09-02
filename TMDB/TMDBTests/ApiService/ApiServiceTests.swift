@@ -32,7 +32,7 @@ final class ApiServiceTests: XCTestCase {
         let mockMovies = try! JSONDecoder().decode(Movies.self, from: mockJsonData)
         let expectation = XCTestExpectation(description: "Fetch trending movies successfully")
         
-        let apiService = ApiService(baseURLString: URL_base)
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
         
         apiService.fetchTrendingMovies(time_window: .day, page: 1, completion: {result in
             switch result{
@@ -51,7 +51,7 @@ final class ApiServiceTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Fetch movies with failure")
         
-        let apiService = ApiService(baseURLString: URL_base + "somethingWrong")
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey + "somethingwrong"))
         
         apiService.fetchTrendingMovies(time_window: .day, page: 1, completion: {result in
             switch result{
@@ -68,7 +68,7 @@ final class ApiServiceTests: XCTestCase {
     func testPerformanceFetchTrendingMovies() throws {
         // This is an example of a performance test case.
         self.measure {
-            let apiService = ApiService(baseURLString: URL_base)
+            let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
             apiService.fetchTrendingMovies(time_window: .day, page: 1, completion: {result in
                 switch result{
                 case .success(_):
@@ -85,7 +85,7 @@ final class ApiServiceTests: XCTestCase {
         let mockMovies = try! JSONDecoder().decode(Movies.self, from: mockJsonData)
         let expectation = XCTestExpectation(description: "Fetch trending movies successfully")
         
-        let apiService = ApiService(baseURLString: URL_base)
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
         
         apiService.searchMovies(query: "O", page: 1, completion: { result in
             switch result{
@@ -104,7 +104,7 @@ final class ApiServiceTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Fetch movies with failure")
         
-        let apiService = ApiService(baseURLString: URL_base + "somethingWrong")
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey + "somethingwrong"))
         
         apiService.searchMovies(query: "O", page: 1, completion: { result in
             switch result{
@@ -121,7 +121,7 @@ final class ApiServiceTests: XCTestCase {
     func testPerformanceSearchMovies() throws {
         // This is an example of a performance test case.
         self.measure {
-            let apiService = ApiService(baseURLString: URL_base)
+            let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
             
             apiService.searchMovies(query: "O", page: 1, completion: { result in
                 switch result{
@@ -140,7 +140,7 @@ final class ApiServiceTests: XCTestCase {
         let mockMovie = try! JSONDecoder().decode(Movie.self, from: mockJsonData)
         let expectation = XCTestExpectation(description: "Fetch trending movies successfully")
         
-        let apiService = ApiService(baseURLString: URL_base)
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
         
         apiService.fetchMovieDetails(movie_id: 335977, completion: { result in
             switch result{
@@ -157,8 +157,7 @@ final class ApiServiceTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "Fetch movies with failure")
         
-        let apiService = ApiService(baseURLString: URL_base + "somethingWrong")
-        
+        let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey + "somethingWrong"))
         apiService.fetchMovieDetails(movie_id: 335977, completion: { result in
             switch result{
             case .success(_):
@@ -174,7 +173,7 @@ final class ApiServiceTests: XCTestCase {
     func testPerformanceFetchMovieDetails() throws {
         // This is an example of a performance test case.
         self.measure {
-            let apiService = ApiService(baseURLString: URL_base)
+            let apiService = ApiService(config: ApiServiceConfiguration(apiKey: TMDB_ApiKey))
             
             apiService.fetchMovieDetails(movie_id: 335977, completion: { result in
                 switch result{
